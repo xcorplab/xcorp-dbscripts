@@ -1,0 +1,20 @@
+
+<Credenciais>
+	Segue credenciais para acesso na instancia do YODA
+	
+	[--Servidor--]
+	yoda.c9v9emyvfefc.sa-east-1.rds.amazonaws.com
+	
+	[--Usuários--]
+	oswaldo.jorge
+	evandro.medrado
+	everton.varago
+	adilson.lustoza
+	tiago.boldrin
+	gilberto.goncalves
+	
+	[--Senha Provisória--]
+	1gpiB7eN
+	
+</Credenciais>
+

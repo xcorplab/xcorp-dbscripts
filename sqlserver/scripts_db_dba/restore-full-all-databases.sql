@@ -1,0 +1,12 @@
+USE [master]
+RESTORE DATABASE [DIGITAL_HMG]
+FROM  DISK = N'E:\Backup\DIGITAL\Full\DIGITAL.bak'
+WITH
+   FILE = 1
+,  MOVE N'DIGITAL' TO N'E:\DATA\DIGITAL_HMG.mdf'
+,  MOVE N'DIGITAL_log' TO N'E:\LOG\DIGITAL_HMG.ldf'
+,  NOUNLOAD
+,  REPLACE
+,  STATS = 5
+GO
+--tempo de restauração: 06:43 em 23/07/2017
