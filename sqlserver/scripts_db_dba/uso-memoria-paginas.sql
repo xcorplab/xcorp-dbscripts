@@ -7,6 +7,8 @@ process_virtual_memory_low
 FROM sys.dm_os_process_memory;
 
 
+
+
 --sp_configure 'show advanced options', 1
 
 --RECONFIGURE
@@ -15,6 +17,7 @@ FROM sys.dm_os_process_memory;
 
 --sp_configure 'max server memory', 46080
 
---EXEC sp_configure 'max degree of parallelism', 4;
+--EXEC sp_configure 'xp_cmdshell', 1;
+--EXEC sp_configure 'max degree of parallelism', 8;
 --GO  
 --RECONFIGURE WITH OVERRIDE;

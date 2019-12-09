@@ -110,7 +110,7 @@ WHERE
     AND A.session_id <> @@SPID
 	AND ((A.session_id = @SPID AND @SPID is not null) OR @SPID is null)
     AND (A.[status] != 'sleeping' OR (A.[status] = 'sleeping' AND A.open_transaction_count > 0))
-	--AND DB_NAME(CAST(B.database_id AS VARCHAR)) in('Armazenamento')
+	--AND DB_NAME(CAST(B.database_id AS VARCHAR)) in('DataPL')
 	--AND DB_NAME(CAST(B.database_id AS VARCHAR)) in('CMP')
 	--AND X.text like '%update dbo.ViewAndamentoProducao%'
 ORDER BY
@@ -118,7 +118,7 @@ ORDER BY
 	database_name
 
 /*
-
+KILL 178
 exec sp_who2 active
 Application Name=Application Name=Aplicação: PrintLaser - M: STP_S_CMP_RetornarDocumentoDigitalPorTarefaLote_Sup...
 
